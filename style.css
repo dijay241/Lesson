@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  color: #222;
+  background: #efefef url(https://www.toptal.com/designers/subtlepatterns/uploads/moroccan-flower.png);
+  padding: 50px;
+}
+
+h1 {
+  font-size: 32px;
+
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h1, h2 {
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: 700;
+}
+
+.cite, blockquote {
+  border-left: 2px solid #222;
+  padding-left: 20px;
+  font-style: italic;
+  margin-left: -20px;
+}
+
+a {
+  color: magenta;
+  text-decoration: none;
+  transition: color 250ms linear;
+}
+
+a:hover {
+  color: green;
+}
+
+ul, ol {
+  margin-left: 20px;
+  margin-bottom: 1em;
+}
+
+ul ol, ul ul {
+  margin-bottom: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.image {
+  margin: 0 auto 100px auto;
+  width: 700px;
+}
+
+.image img {
+  width: 100%;
+}
