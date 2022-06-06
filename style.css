@@ -33,6 +33,7 @@ em, i {
 
 strong, b {
   font-weight: 700;
+  display: inline;
 }
 
 .cite, blockquote {
