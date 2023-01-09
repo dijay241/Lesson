@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+body {
+  font-family: 'PT Sans', sans-serif;
+  background: white;
+  padding: 24px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none;
+}
+
+.switch {
+  position: relative;
+  width: 80px;
+  height: 40px;
+}
+
+.switch::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #f3d5f3;
+  width: 80px;
+  height: 40px;
+  border-radius: 20px;
+  transition: background-color 500ms;
+}
+
+.switch::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  background: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px rgba(0,0,0,0.3);
+  transition: left 200ms ease-in;
+}
+
+.switch:checked::before {
+  background: magenta;
+}
+
+.switch:checked::after {
+  left: 44px;
+}
+
+.red {
+  background-color: white;
+  height: 64px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+.row {
+  margin-bottom: 24px;
+}
+
+.txt-label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #444;
+}
+
+.txt-input {
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  background-color: white;
+  border: 2px solid #ddd;
+  border-left-width: 0;
+  border-right-width: 0;
+  border-top-width: 0;
+  padding: 6px 0;
+  outline: none;
+}
+
+.txt-input:hover {
+  border-color: #bbb;
+}
+
+.txt-input:focus {
+  border-color: magenta;
+}
+
+.txt-input:disabled {
+  color: #999;
+}
+
+.txt-input:disabled:hover {
+  border-color: #ddd;
+}
+
+.btn {
+  font-size: 16px;
+  border: none;
+  border-radius: 32px;
+  height: 64px;
+  padding: 0 24px;
+  line-height: 64px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: magenta;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #dd00dd;
+}
+
+.btn-primary:active {
+  background-color: #bb00bb;
+}
+
+.btn-secondary {
+  background-color: #f3d5f3;
+  color: black;
+}
+
+.btn-secondary:hover {
+  background-color: #e8c5e8;
+}
+
+.btn-secondary:active {
+  background-color: #ceafce;
+}
+
+.btn:disabled {
+  background-color: #f3d5f3;
+  color: rgba(0,0,0,0.3);
+}
+
+.chk-label, .rdo-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.chk-input, .rdo-input {
+  display: none;
+}
+
+.chk-label span, .rdo-label span {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  line-height: 32px;
+}
+
+.chk-label span:before, .rdo-label span:before {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 24px;
+  background-color: #f3d5f3;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -12px;
+}
+
+.chk-label span:before {
+  border-radius: 4px;
+}
+
+.rdo-label span:before {
+  border-radius: 50%;
+}
+
+.rdo-input:checked + span:after {
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: magenta;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  margin-top: -4px;
+}
+
+.chk-input:checked + span:after {
+  content: '';
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url('images/check.svg') no-repeat center;
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  margin-top: -8px;
+}
+
+.blue {
+  width: 50px;
+  height: 2000px;
+}
